@@ -47,7 +47,7 @@ const Hero = () => {
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
         <div className="flex items-center  justify-center flex-col md:flex-row relative z-10">
-          <div className="md:w-5/12 md:mr-8">
+          <div className=" text-center md:w-5/12 md:mr-8">
             <motion.h1
               variants={textVariant(1.1)}
               className={`${styles.heroHeading} sm:text-[48px]`}

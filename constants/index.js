@@ -59,6 +59,13 @@ export const newFeatures = [
 
 export const insights = [
   {
+    imgUrl: '/gsoc.jpg',
+    title: 'How i got accepted into GSoC 2023',
+    subtitle: 
+      'My experience programming, from contributing to open-source to cracking GSoC in 2023',
+    hyperl: 'https://sonichere.hashnode.dev/gsoc-2023',
+  },
+  {
     imgUrl: '/react.jpg',
     title: 'Why should you use "React" for your next Project',
     subtitle:

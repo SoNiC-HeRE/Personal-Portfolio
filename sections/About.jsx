@@ -34,7 +34,7 @@ you could find me listening to songs.
 
       <motion.img
         variants={fadeIn('up','tween',0.3,1)}
-        src="/arrow-down.svg"
+        src="/arrow-down.svg"dsdsds
         alt="arrow down"
         className="w-[18px] h-[28px] object-contain mt-[28px]"
       />

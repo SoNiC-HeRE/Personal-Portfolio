@@ -4,23 +4,34 @@ import { motion } from "framer-motion";
 import styles from "../styles";
 import { staggerContainer, fadeIn, planetVariants } from "../utils/motion";
 import { TitleText, TypingText } from "../components";
-import { useScroll } from "framer-motion";
-import { useRef,useState } from "react";
-import GitHub from "./work/Github";
+import { useState } from "react";
+import GSoC from "./work/GSoC";
 import Gfg from "./work/Gfg";
 import Blotic from "./work/Blotic";
 import Hacktoberfest from "./work/Hacktoberfest";
 import Tp from "./work/Tp";
+import Blogger from "./work/Blogger";
 
 const World = () => {
-  const [workGitHub,setworkGitHub] = useState(true);
+  const [workGSoC,setworkGSoC] = useState(true);
   const [workBlotic,setworkBlotic] = useState(false);
   const [workGfg,setworkGfg] = useState(false);
   const [workHacktoberfest,setworkHacktoberfest] = useState(false);
   const [worktandp,setworktandp] = useState(false);
+  const [workblogger,setworkblogger] = useState(false);
 
-  const handleGitHub = () => { 
-    setworkGitHub(true);
+  const handleGSoC = () => { 
+    setworkGSoC(true);
+    setworkblogger(false);
+    setworkBlotic(false);
+    setworkGfg(false);
+    setworkHacktoberfest(false);
+    setworktandp(false);
+  };
+
+  const handleBlogger = () => { 
+    setworkGSoC(false);
+    setworkblogger(true);
     setworkBlotic(false);
     setworkGfg(false);
     setworkHacktoberfest(false);
@@ -28,7 +39,8 @@ const World = () => {
   };
 
   const handleBlotic = () => { 
-    setworkGitHub(false);
+    setworkGSoC(false);
+    setworkblogger(false);
     setworkBlotic(true);
     setworkGfg(false);
     setworkHacktoberfest(false);
@@ -36,7 +48,8 @@ const World = () => {
   };
 
   const handleGfg = () => { 
-    setworkGitHub(false);
+    setworkGSoC(false);
+    setworkblogger(false);
     setworkBlotic(false);
     setworkGfg(true);
     setworkHacktoberfest(false);
@@ -44,7 +57,8 @@ const World = () => {
   };
 
   const handleHacktoberfest = () => { 
-    setworkGitHub(false);
+    setworkGSoC(false);
+    setworkblogger(false);
     setworkBlotic(false);
     setworkGfg(false);
     setworkHacktoberfest(true);
@@ -52,7 +66,8 @@ const World = () => {
   };
 
   const handletandp = () => { 
-    setworkGitHub(false);
+    setworkGSoC(false);
+    setworkblogger(false);
     setworkBlotic(false);
     setworkGfg(false);
     setworkHacktoberfest(false);
@@ -72,8 +87,11 @@ const World = () => {
       <TitleText title="My Experience" textStyles="text-center" />
     <div className="items-center mt-4 md:w-full md:ml-4 md:mt-20 md:ml-48 flex flex-col md:flex-row gap-16">
       <ul className="w-48 gap-4 mt-12 md:w-48 flex flex-col text-center md:justify-start">
-        <li onClick={handleGitHub} className="border-l-2 border-l-[#66fcf1] text-white bg-transparent hover:bg-[#66fcf1] py-3 text-sm cursor-pointer duration-300 px-8 font-medium">
-          GitHub
+        <li onClick={handleGSoC} className="border-l-2 border-l-[#66fcf1] text-white bg-transparent hover:bg-[#66fcf1] py-3 text-sm cursor-pointer duration-300 px-8 font-medium">
+          GSoC
+        </li>
+        <li onClick={handleBlogger} className="border-l-2 border-l-[#66fcf1] text-white bg-transparent hover:bg-[#66fcf1] py-3 text-sm cursor-pointer duration-300 px-8 font-medium">
+          Blogger
         </li>
         <li onClick={handleHacktoberfest} className="border-l-2 border-l-[#66fcf1] text-white bg-transparent hover:bg-[#66fcf1] py-3 text-sm cursor-pointer duration-300 px-8 font-medium">
           Hacktoberfest
@@ -88,7 +106,8 @@ const World = () => {
           T&P Cell
         </li>
       </ul>
-      {workGitHub && <GitHub />}
+      {workGSoC && <GSoC />}
+      {workblogger && <Blogger />}
       {workBlotic && <Blotic />}
       {workGfg && <Gfg />}
       {workHacktoberfest && <Hacktoberfest />}

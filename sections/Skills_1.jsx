@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import styles from "../styles";
 import {staggerContainer,fadeIn, planetVariants} from "../utils/motion";
-import { StartSteps, TitleText, TypingText } from "../components";
+import { SkillsInfo, TitleText, TypingText } from "../components";
 import { startingFeatures } from "../constants";
 
 const GetStarted = () => (
@@ -40,7 +40,7 @@ const GetStarted = () => (
       whileInView="show"
       >
         {startingFeatures.map((feature, index)=>(
-          <StartSteps
+          <SkillsInfo
             key={feature}
             number={index+1}
             text={feature}

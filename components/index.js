@@ -1,18 +1,18 @@
 import Navbar from './Navbar';
 import { TypingText, TitleText } from './CustomTexts';
-import ExploreCard from './ProjectCard';
-import StartSteps from './SkillsInfo';
-import NewFeatures from './MoreInfo';
-import InsightCard from './BlogCard';
+import ProjectCard from './ProjectCard';
+import SkillsInfo from './SkillsInfo';
+import MoreInfo from './MoreInfo';
+import BlogCard from './BlogCard';
 import Footer from './Footer';
 
 export {
   Navbar,
   TitleText,
   TypingText,
-  StartSteps,
-  NewFeatures,
-  ExploreCard,
-  InsightCard,
+  SkillsInfo,
+  MoreInfo,
+  ProjectCard,
+  BlogCard,
   Footer,
 };

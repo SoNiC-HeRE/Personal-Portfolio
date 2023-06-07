@@ -1,7 +1,7 @@
 'use client';
 
 import { useState,useEffect } from "react";
-import { ExploreCard, TitleText, TypingText } from "../components";
+import { ProjectCard, TitleText, TypingText } from "../components";
 import styles from "../styles";
 import { staggerContainer } from "../utils/motion";
 import { motion } from "framer-motion";
@@ -23,7 +23,7 @@ const Explore = () => {
       <TitleText title={<>Choose the Project you want <br className="md:block hidden" /> to explore</>} textStyles="text-center" />
       <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
           {exploreWorlds.map((world, index)=>(
-            <ExploreCard
+            <ProjectCard
             key={world.id}
             {...world}
             index={index}

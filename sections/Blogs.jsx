@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import styles from "../styles";
 import {staggerContainer } from "../utils/motion";
-import { InsightCard, TitleText, TypingText } from "../components";
+import { BlogCard, TitleText, TypingText } from "../components";
 import { insights } from "../constants";
 
 const Insights = () => (
@@ -20,7 +20,7 @@ const Insights = () => (
       <div className="mt-[50px] flex flex-col gap-[30px]"
       >
         {insights.map((insight,index)=>(
-          <InsightCard key={`insight-${index}`}{...insight}
+          <BlogCard key={`insight-${index}`}{...insight}
           index={index+1} />
         ))}
       </div>

@@ -2,8 +2,14 @@
 
 import { useState, useEffect } from 'react';
 import { Footer, Navbar } from '../components';
-import { About, Explore, Feedback, GetStarted, Hero, Insights, WhatsNew, World } from '../sections';
+import Blogs from '../sections/Blogs';
+import Projects from '../sections/Projects';
+import SkillsOne from '../sections/Skills_1';
+import { About, Hero } from '../sections';
 import Loader from '../sections/Loader';
+import SkillsTwo from '../sections/Skills_2';
+import Certification from '../sections/Certification';
+import Experience from '../sections/Experience';
 
 const Page = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -23,18 +29,21 @@ const Page = () => {
       <div className='relative'>
         <About />
         <div className='gradient-03 z-0'/>
-        <Explore />
+        <Projects />
       </div>
       <div className='relative'>
-        <GetStarted />
+        <SkillsOne />
         <div className='gradient-03 z-0'/>
-        <WhatsNew />
+         <SkillsTwo />
       </div>
-      <World />
       <div className='relative'>
-        <Insights />
+      <Experience />
+      <div className="gradient-02 z-0" />
+      </div>
+      <div className='relative'>
+        <Blogs />
         <div className='gradient-04 z-0'/>
-        <Feedback />
+        <Certification />
       </div>
       <Footer />
     </div>

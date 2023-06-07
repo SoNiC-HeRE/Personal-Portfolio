@@ -6,7 +6,7 @@ import {staggerContainer,fadeIn, planetVariants} from "../utils/motion";
 import { SkillsInfo, TitleText, TypingText } from "../components";
 import { startingFeatures } from "../constants";
 
-const GetStarted = () => (
+const SkillsOne = () => (
   <section className={`${styles.paddings} relative z-10`} id="skills_one">
     <motion.div
           variants={staggerContainer}
@@ -52,4 +52,4 @@ const GetStarted = () => (
   </section>
 );
 
-export default GetStarted;
+export default SkillsOne;

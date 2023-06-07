@@ -6,7 +6,7 @@ import {staggerContainer } from "../utils/motion";
 import { BlogCard, TitleText, TypingText } from "../components";
 import { insights } from "../constants";
 
-const Insights = () => (
+const Blogs = () => (
   <section className={`${styles.paddings} relative z-10`} id="blogs">
     <motion.div
       variants={staggerContainer}
@@ -28,4 +28,4 @@ const Insights = () => (
   </section>
 );
 
-export default Insights;
+export default Blogs;

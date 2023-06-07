@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import styles from "../styles";
 import { fadeIn,staggerContainer,zoomIn } from "../utils/motion";
 import {TitleText, TypingText } from "../components";
-const Feedback = () => (
+const Certification = () => (
   <section className={`${styles.paddings} relative z-10`} id="certification">
     <TypingText title="| My Recent" textStyles="text-center" />
     <TitleText title="Certification" textStyles="text-center"/>
@@ -63,4 +63,4 @@ const Feedback = () => (
   </section>
 );
 
-export default Feedback;
+export default Certification;

@@ -7,7 +7,7 @@ import { staggerContainer } from "../utils/motion";
 import { motion } from "framer-motion";
 import {exploreWorlds} from "../constants";
 
-const Explore = () => {
+const Projects = () => {
   const [active,setActive] = useState('world-4')
 
   return(
@@ -35,4 +35,4 @@ const Explore = () => {
   </section>
 )};
 
-export default Explore;
+export default Projects;

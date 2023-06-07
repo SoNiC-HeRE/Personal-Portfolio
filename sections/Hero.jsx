@@ -116,16 +116,16 @@ const Hero = () => {
             style={{
               boxShadow: "0 0 0 4px #66FCF1",
               border: "0px solid #66FCF1",
-              transition: "all 0.2s ease-out", // add transition property
+              transition: "all 0.2s ease-out", 
             }}
             initial="hidden"
             whileInView="show"
             variants={slideIn("right", "tween", 0.7, 2)}
             whileHover={{ 
-              scale: 1.05, // Scale up the image slightly
-              boxShadow: "0 0 10px 0px #66FCF1", // Add a larger box shadow
-              transition: { duration: 0.3 }, // Faster transition duration
-              zIndex: 1, // Increase the z-index to be above other elements
+              scale: 1.05, 
+              boxShadow: "0 0 10px 0px #66FCF1", 
+              transition: { duration: 0.3 }, 
+              zIndex: 1, 
             }}
           />
         </div>

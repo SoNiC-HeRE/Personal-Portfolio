@@ -12,7 +12,7 @@ import Hacktoberfest from "./work/Hacktoberfest";
 import Tp from "./work/Tp";
 import Blogger from "./work/Blogger";
 
-const World = () => {
+const Experience = () => {
   const [workGSoC,setworkGSoC] = useState(true);
   const [workBlotic,setworkBlotic] = useState(false);
   const [workGfg,setworkGfg] = useState(false);
@@ -118,4 +118,4 @@ const World = () => {
   </section>
 )};
 
-export default World;
+export default Experience;

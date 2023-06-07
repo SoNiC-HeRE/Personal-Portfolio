@@ -18,7 +18,7 @@ const GSSoC = () => {
         Selected as a GSSoC Contributor to contribute to various projects
         </li>
         <li className='text-base flex gap-2 text-white'><span className='text-[#66fcf1]'><TiArrowForward /></span>
-        Tech Involved: React.js,Node.js,Express.js,HTML,CSS,JavaScript
+        Tech Involved: React.js,Node.js,Express.js,HTML,CSS<br/>and JavaScript
         </li>
     </ul>   
 </motion.div>

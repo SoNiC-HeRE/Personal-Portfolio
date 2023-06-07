@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import styles from "../styles";
 import {staggerContainer } from "../utils/motion";
 import { BlogCard, TitleText, TypingText } from "../components";
-import { insights } from "../constants";
+import { blogs } from "../constants";
 
 const Blogs = () => (
   <section className={`${styles.paddings} relative z-10`} id="blogs">
@@ -19,8 +19,8 @@ const Blogs = () => (
       <TitleText title="My Blogs" textStyles="text-center" />
       <div className="mt-[50px] flex flex-col gap-[30px]"
       >
-        {insights.map((insight,index)=>(
-          <BlogCard key={`insight-${index}`}{...insight}
+        {blogs.map((blog,index)=>(
+          <BlogCard key={`insight-${index}`}{...blog}
           index={index+1} />
         ))}
       </div>

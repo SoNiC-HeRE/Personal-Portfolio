@@ -15,7 +15,6 @@ const Page = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate a delay for the loader to show
     setTimeout(() => {
       setIsLoading(false);
     }, 1000);

@@ -1,4 +1,4 @@
-export const exploreWorlds = [
+export const projects = [
   {
     id: 'project-1',
     imgUrl: '/project1.jpg',
@@ -36,13 +36,13 @@ export const exploreWorlds = [
   },
 ];
 
-export const startingFeatures = [
+export const devskills = [
   'Comfortable with 8+ Languages',
   '20+ projects completed with 15+ industry-recognised certifications',
   'Experienced in Full Stack Web Development and learning Blockchain Development',
 ];
 
-export const newFeatures = [
+export const designskills = [
   {
     imgUrl: '/graphic.svg',
     title: 'Graphic Designer',
@@ -57,7 +57,7 @@ export const newFeatures = [
   },
 ];
 
-export const insights = [
+export const blogs = [
   {
     imgUrl: '/gsoc.jpg',
     title: 'How i got accepted into GSoC 2023',

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import styles from "../styles";
 import { staggerContainer, fadeIn, planetVariants } from "../utils/motion";
 import { MoreInfo, TitleText, TypingText } from "../components";
-import { newFeatures } from "../constants";
+import { designskills } from "../constants";
 
 const SkillsTwo = () => (
 <section className={`${styles.paddings} relative z-10`} id="skills_two">
@@ -27,10 +27,10 @@ const SkillsTwo = () => (
       initial="hidden"
       whileInView="show"
       >
-        {newFeatures.map((feature)=>(
+        {designskills.map((skill)=>(
           <MoreInfo
-            key={feature.title}
-           {...feature}
+            key={skill.title}
+           {...skill}
           />
         ))}
         </motion.div>

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import styles from "../styles";
 import {staggerContainer,fadeIn, planetVariants} from "../utils/motion";
 import { SkillsInfo, TitleText, TypingText } from "../components";
-import { startingFeatures } from "../constants";
+import { devskills } from "../constants";
 
 const SkillsOne = () => (
   <section className={`${styles.paddings} relative z-10`} id="skills_one">
@@ -39,11 +39,11 @@ const SkillsOne = () => (
       initial="hidden"
       whileInView="show"
       >
-        {startingFeatures.map((feature, index)=>(
+        {devskills.map((skill, index)=>(
           <SkillsInfo
-            key={feature}
+            key={skill}
             number={index+1}
-            text={feature}
+            text={skill}
           />
         ))}
       </motion.div>

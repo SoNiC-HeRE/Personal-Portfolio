@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import styles from "../styles";
-import { staggerContainer, fadeIn, planetVariants } from "../utils/motion";
+import { staggerContainer, fadeIn, motionVariants } from "../utils/motion";
 import { MoreInfo, TitleText, TypingText } from "../components";
 import { designskills } from "../constants";
 
@@ -36,7 +36,7 @@ const SkillsTwo = () => (
         </motion.div>
     </motion.div>
     <motion.div
-      variants={planetVariants('right')}
+      variants={motionVariants('right')}
       className={`flex-1 ${styles.flexCenter}`}
       initial="hidden"
       whileInView="show"

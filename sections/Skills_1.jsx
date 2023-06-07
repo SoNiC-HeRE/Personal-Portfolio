@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import styles from "../styles";
-import {staggerContainer,fadeIn, planetVariants} from "../utils/motion";
+import {staggerContainer,fadeIn, motionVariants} from "../utils/motion";
 import { SkillsInfo, TitleText, TypingText } from "../components";
 import { devskills } from "../constants";
 
@@ -16,7 +16,7 @@ const SkillsOne = () => (
           className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-8`}
     >
     <motion.div
-      variants={planetVariants('left')}
+      variants={motionVariants('left')}
       className={`flex-1 ${styles.flexCenter}`}
       initial="hidden"
       whileInView="show"

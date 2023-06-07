@@ -5,6 +5,7 @@ import styles from "../styles";
 import { staggerContainer, fadeIn, motionVariants } from "../utils/motion";
 import { TitleText, TypingText } from "../components";
 import { useState } from "react";
+import GSSoC from "./work/GSSoC";
 import GSoC from "./work/GSoC";
 import Gfg from "./work/Gfg";
 import Blotic from "./work/Blotic";
@@ -19,9 +20,21 @@ const Experience = () => {
   const [workHacktoberfest,setworkHacktoberfest] = useState(false);
   const [worktandp,setworktandp] = useState(false);
   const [workblogger,setworkblogger] = useState(false);
+  const [workGSSoC,setworkGSSoC] = useState(false);
 
   const handleGSoC = () => { 
     setworkGSoC(true);
+    setworkGSSoC(false);
+    setworkblogger(false);
+    setworkBlotic(false);
+    setworkGfg(false);
+    setworkHacktoberfest(false);
+    setworktandp(false);
+  };
+
+  const handleGSSoC = () => { 
+    setworkGSoC(false);
+    setworkGSSoC(true);
     setworkblogger(false);
     setworkBlotic(false);
     setworkGfg(false);
@@ -31,6 +44,7 @@ const Experience = () => {
 
   const handleBlogger = () => { 
     setworkGSoC(false);
+    setworkGSSoC(false);
     setworkblogger(true);
     setworkBlotic(false);
     setworkGfg(false);
@@ -40,6 +54,7 @@ const Experience = () => {
 
   const handleBlotic = () => { 
     setworkGSoC(false);
+    setworkGSSoC(false);
     setworkblogger(false);
     setworkBlotic(true);
     setworkGfg(false);
@@ -49,6 +64,7 @@ const Experience = () => {
 
   const handleGfg = () => { 
     setworkGSoC(false);
+    setworkGSSoC(false);
     setworkblogger(false);
     setworkBlotic(false);
     setworkGfg(true);
@@ -58,6 +74,7 @@ const Experience = () => {
 
   const handleHacktoberfest = () => { 
     setworkGSoC(false);
+    setworkGSSoC(false);
     setworkblogger(false);
     setworkBlotic(false);
     setworkGfg(false);
@@ -67,6 +84,7 @@ const Experience = () => {
 
   const handletandp = () => { 
     setworkGSoC(false);
+    setworkGSSoC(false);
     setworkblogger(false);
     setworkBlotic(false);
     setworkGfg(false);
@@ -90,6 +108,9 @@ const Experience = () => {
         <li onClick={handleGSoC} className="border-l-2 border-l-[#66fcf1] text-white bg-transparent hover:bg-[#66fcf1] py-3 text-sm cursor-pointer duration-300 px-8 font-medium">
           GSoC
         </li>
+        <li onClick={handleGSSoC} className="border-l-2 border-l-[#66fcf1] text-white bg-transparent hover:bg-[#66fcf1] py-3 text-sm cursor-pointer duration-300 px-8 font-medium">
+          GSSoC
+        </li>
         <li onClick={handleBlogger} className="border-l-2 border-l-[#66fcf1] text-white bg-transparent hover:bg-[#66fcf1] py-3 text-sm cursor-pointer duration-300 px-8 font-medium">
           Blogger
         </li>
@@ -107,6 +128,7 @@ const Experience = () => {
         </li>
       </ul>
       {workGSoC && <GSoC />}
+      {workGSSoC && <GSSoC />}
       {workblogger && <Blogger />}
       {workBlotic && <Blotic />}
       {workGfg && <Gfg />}

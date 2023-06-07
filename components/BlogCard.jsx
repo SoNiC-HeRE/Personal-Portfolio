@@ -9,7 +9,7 @@ const BlogCard = ({imgUrl,title,subtitle,index,hyperl}) => (
   >
     <img
       src={imgUrl}
-      alt="planet-01"
+      alt="blog-01"
       className="md:w-[270px] w-full h-[250px] rounded-[32px] object-cover"
     />
     <div className="flex-1 md:ml-[62px] flex flex-col max-w-[650px]">
